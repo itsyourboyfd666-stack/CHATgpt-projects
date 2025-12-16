@@ -1,0 +1,15 @@
+{
+  "name": "App Store Web Hub",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bullseye",
+  "postCreateCommand": "cd web && npm install",
+  "forwardPorts": [5173],
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.autoSave": "onFocusChange"
+      }
+    }
+  }
+}
